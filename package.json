@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "description": "Parse Exclusively Safe Integer From String",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
-    "test": "esbuild test/run.ts --bundle --outfile=test/run.js --platform=node --external:./node_modules/* --target=ESNext --minify --allow-overwrite && node test/run.js"
+    "test": "esbuild test/run.ts --bundle --outfile=test/run.js --platform=node --external:./node_modules/* --target=ESNext --minify --allow-overwrite && node test/run.js",
+    "prepublish": "npx tsc"
   },
   "repository": {
     "type": "git",
-    "url": "github.com"
+    "url": "https://github.com/MintedKitten/parseInteger"
   },
   "keywords": [
     "typescript",
