@@ -1,0 +1,26 @@
+{
+  "name": "parseinteger",
+  "version": "1.0.0",
+  "description": "Parse Exclusively Safe Integer From String",
+  "main": "index.js",
+  "scripts": {
+    "test": "esbuild test/run.ts --bundle --outfile=test/run.js --platform=node --external:./node_modules/* --target=ESNext --minify --allow-overwrite && node test/run.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com"
+  },
+  "keywords": [
+    "typescript",
+    "javascript",
+    "parseinteger"
+  ],
+  "author": "MintedKitten",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "esbuild": "^0.16.8"
+  }
+}
