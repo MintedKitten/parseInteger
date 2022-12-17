@@ -3,3 +3,6 @@
 
 # visual studio code debugger
 /.vscode
+
+# dependencies
+/node_modules
