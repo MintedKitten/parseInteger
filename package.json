@@ -2,11 +2,11 @@
   "name": "parseinteger",
   "version": "1.0.0",
   "description": "Parse Exclusively Safe Integer From String",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
   "scripts": {
     "test": "esbuild test/run.ts --bundle --outfile=test/run.js --platform=node --external:./node_modules/* --target=ESNext --minify --allow-overwrite && node test/run.js",
-    "prepublish": "npx tsc"
+    "prepublish": "npx tsc src/index.ts --declaration --esModuleInterop --allowSyntheticDefaultImports --outDir build"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,7 @@
   "author": "MintedKitten",
   "license": "MIT",
   "devDependencies": {
+    "rollup": "^3.7.5",
     "typescript": "^4.9.4"
   },
   "dependencies": {

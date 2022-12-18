@@ -1,4 +1,4 @@
-import { parseInteger } from "..";
+import { parseInteger } from "../src";
 
 try {
   const temp = parseInteger("");
@@ -29,3 +29,9 @@ try {
 } catch (e) {
   console.log('Test "12" : Failed');
 }
+
+function test() {
+  console.log("Hello Test");
+}
+
+export { test as test };
