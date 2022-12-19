@@ -9,3 +9,6 @@
 
 # src
 /src/index.ts
+
+# tsconfig
+tsconfig.json
