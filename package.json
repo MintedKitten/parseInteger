@@ -4,10 +4,11 @@
   "description": "Parse Exclusively Safe Integer From String",
   "main": "build/index.js",
   "types": "build/index.d.ts",
+  "module": "build/index.mjs",
   "scripts": {
     "test": "esbuild test/run.ts --bundle --outfile=test/run.js --platform=node --external:./node_modules/* --target=ESNext --minify --allow-overwrite && node test/run.js",
     "prepublish": "npm run bundle && npm run declaration",
-    "bundle":"npm run bundle:esm && npm run bundle:cjs",
+    "bundle": "npm run bundle:esm && npm run bundle:cjs",
     "bundle:esm": "esbuild src/index.ts --bundle --format=esm --outfile=build/index.mjs --platform=node --external:./node_modules/* --target=ESNext --minify --allow-overwrite",
     "bundle:cjs": "esbuild src/index.ts --bundle --outfile=build/index.js --platform=node --external:./node_modules/* --target=ESNext --minify --allow-overwrite",
     "declaration": "npx tsc src/index.ts --declaration --emitDeclarationOnly --esModuleInterop --allowSyntheticDefaultImports --outDir build"
