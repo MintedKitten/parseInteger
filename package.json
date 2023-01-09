@@ -18,9 +18,11 @@
     "url": "https://github.com/MintedKitten/parseInteger"
   },
   "keywords": [
-    "typescript",
-    "javascript",
-    "parseinteger"
+    "TypeScript",
+    "JavaScript",
+    "parseInteger",
+    "Integer",
+    "Parse"
   ],
   "author": "MintedKitten",
   "license": "MIT",
