@@ -4,6 +4,7 @@
 
 Parse Exclusively Safe Integer From String
 
+## Example
 ```typescript
 import { parseInteger } from "parseinteger";
 
