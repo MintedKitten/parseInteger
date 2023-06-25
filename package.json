@@ -7,7 +7,7 @@
   "module": "build/index.mjs",
   "scripts": {
     "test": "jest",
-    "prepublish": "npm run bundle && npm run declaration",
+    "prepublishOnly": "npm run bundle && npm run declaration",
     "bundle": "npm run bundle:esm && npm run bundle:cjs",
     "bundle:esm": "esbuild src/index.ts --bundle --format=esm --outfile=build/index.mjs --platform=node --external:./node_modules/* --target=ESNext --minify --allow-overwrite",
     "bundle:cjs": "esbuild src/index.ts --bundle --outfile=build/index.js --platform=node --external:./node_modules/* --target=ESNext --minify --allow-overwrite",

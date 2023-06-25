@@ -1,4 +1,4 @@
-import { parseInteger } from "../src";
+import { parseInteger } from "../build";
 
 describe("Test Parse Integer", () => {
   test("Parse Integer Input Scenarios", () => {
